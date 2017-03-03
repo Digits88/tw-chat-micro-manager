@@ -1,0 +1,33 @@
+{
+  "name": "@teamwork/tw-chat-bot-micro-manager",
+  "version": "0.0.1",
+  "description": "Teamwork Chat Micro Manager",
+  "main": "src/MicroManager.js",
+  "author": "Adrian Cooney <adrian.cooney@teamwork.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --require babel-polyfill"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "cron": "^1.2.1",
+    "moment": "^2.17.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "mocha": "^3.2.0"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-async-to-generator"
+    ]
+  }
+}
